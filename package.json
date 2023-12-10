@@ -6,7 +6,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "docker:build": "docker-compose build",
+    "docker:start": "docker-compose up",
+    "docker:stop": "docker-compose down",
+    "prisma:migrate": "npx prisma migrate dev",
+    "prisma:generate": "npx prisma generate",
+    "dev-with-docker": "npm run docker:start && npm run prisma:migrate && npm run prisma:generate && npm run dev",
+    "dev:setup": "npm run docker:build && npm run dev-with-docker"
   },
   "author": "",
   "license": "ISC",
