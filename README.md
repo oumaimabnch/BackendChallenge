@@ -1,5 +1,7 @@
 # Project Commands
+npm run dev:setup
 
+{{
 # Docker Commands
 npm run docker:build
 
@@ -17,3 +19,4 @@ npm run dev-with-docker
 
  Builds Docker containers and sets up the development environment using npm run docker:build followed by npm run dev-with-docker.
 npm run dev:setup
+}}
