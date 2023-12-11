@@ -6,7 +6,7 @@ npm run docker:build
 npm run docker:start
 
 # prisma Commands
-Executes database migrations for development using npx prisma migrate dev.
+Executes database migrations for development using npx prisma migrate dev. 
 npm run prisma:migrate
 Generates the Prisma client using npx prisma generate.
 npm run prisma:generate
