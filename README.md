@@ -1,6 +1,6 @@
 # Project Commands
 # **************
-# npm run dev:setup
+npm run dev:setup
 # **************
 # Project Commands
 {{
